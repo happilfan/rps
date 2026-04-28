@@ -65,7 +65,7 @@ function playGame(playerMove) {
         confetti({
             particleCount: 120,
             spread: 70,
-            origin: { x: 0.2, y: 0.6 }
+            origin: { x: 0.2, y: 0.3 }
         });
 
     }
