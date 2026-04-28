@@ -1,0 +1,58 @@
+body {
+    font-family: 'comic sans ms';
+    color: white;
+    background-color: black;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.move-button {
+    width: 150px;
+    height: 150px;
+    border: 3px dashed white;
+    border-radius: 75px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+    .move-icon {
+        height: 100px;
+        width: 100px;
+    }
+    .log-icon {
+        height: 75px;
+        width: 75px;
+    }
+
+.moves {
+    margin-top: 30px;
+}
+    .moves-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+.result {
+    font-size: 24px;
+    font-weight: bold;
+}
+    .win {
+        color: rgb(0, 255, 0);
+    }
+    .lose {
+        color: red;
+    }
+    .tie {
+        color: rgb(255, 255, 0);
+    }
+
+.reset-score-button {
+    font-size: 15px;
+    border: none;
+    padding: 8px 15px;
+    background-color: white;
+    cursor: pointer;
+}
