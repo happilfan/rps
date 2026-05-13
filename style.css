@@ -49,10 +49,13 @@ body {
         color: rgb(255, 255, 0);
     }
 
-.reset-score-button {
+.reset-score-button, .auto-play-button {
     font-size: 15px;
     border: none;
     padding: 8px 15px;
     background-color: white;
     cursor: pointer;
 }
+    .is-AutoPlaying {
+        background-color: red;
+    }
