@@ -16,6 +16,37 @@ if (!score) {
 }
 */
 
+let isAutoPlaying = false;
+let intervalId;
+
+function autoPlay() {
+
+    const buttonElement = document.querySelector('.auto-play-button');
+
+    //if (isAutoPlaying === false)
+    if (!isAutoPlaying) {
+
+        const playerMove = pickComputerMove();
+        playGame(playerMove);
+
+        intervalId = setInterval(function() {
+            const playerMove = pickComputerMove();
+            playGame(playerMove);
+        }, 1000);
+        isAutoPlaying = true;
+
+        buttonElement.innerHTML = 'Stop';
+        buttonElement.classList.add ('is-AutoPlaying');
+    }
+    else {
+        clearInterval(intervalId);
+        isAutoPlaying = false;
+
+        buttonElement.innerHTML = 'Auto Play';
+        buttonElement.classList.remove ('is-AutoPlaying');
+    }
+}
+
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
 
